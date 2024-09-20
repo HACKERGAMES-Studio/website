@@ -816,6 +816,13 @@ Most Popular Style
   border-radius: 23px;
 }
 
+.most-popular2 {
+  margin-top: 60px;
+  padding: 30px;
+  background-color: #1f2122;
+  border-radius: 23px;
+}
+
 .most-popular .item {
   background-color: #27292a;
   padding: 30px 15px;
