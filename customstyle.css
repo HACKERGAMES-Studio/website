@@ -1,0 +1,29 @@
+/* Wenn die Seite im Dark Mode ist */
+@media (prefers-color-scheme: dark) {
+    .invert {
+        filter: invert(1);
+    }
+}
+
+/* Styling für normale navbar-item (Desktop) */
+.navbar-item.is-selected {
+    background-color: transparent;
+    color: #3273dc;
+    font-weight: bold;
+    border-bottom: 2px solid #3273dc;
+}
+
+/* Styling für die Dropdown-Items im Navbar */
+.navbar-dropdown .navbar-item.is-selected {
+    background-color: #3273dc;
+    color: white;
+}
+
+/* Styling für das Burger-Menü (Mobile) */
+@media screen and (max-width: 1024px) {
+    .navbar-menu .navbar-item.is-selected {
+        background-color: #3273dc; /* Blaue Hintergrundfarbe für ausgewählte Elemente */
+        color: white; /* Weiße Schrift auf blauem Hintergrund */
+        border-bottom: none; /* Entfernt die Unterstreichung */
+    }
+}

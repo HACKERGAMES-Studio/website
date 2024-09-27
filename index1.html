@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hackergames</title>
+
+        <!-- Bulma Framework -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+        />
+
+        <!-- Custon CSS -->
+        <link rel="stylesheet" href="customstyle.css" />
+    </head>
+    <body>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="/img/logo.png" />
+                </a>
+
+                <a
+                    role="button"
+                    class="navbar-burger"
+                    aria-label="menu"
+                    aria-expanded="false"
+                    data-target="navbarMenu"
+                >
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item is-selected"> Home </a>
+
+                    <a class="navbar-item"> Browse </a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link"> More </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item"> About Us </a>
+                            <a class="navbar-item"> Contact </a>
+                            <hr class="navbar-divider" />
+                            <a
+                                class="navbar-item"
+                                href="https://github.com/lutz-stu/minizombay-software/issues"
+                                target="”_blank”"
+                            >
+                                <img
+                                    src="/img/external-link.svg"
+                                    class="invert"
+                                />
+                                &nbsp;Report an issue on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a
+                                class="button is-link"
+                                href="https://minihacker3000.itch.io"
+                                target="”_blank”"
+                            >
+                                <span class="icon-text">
+                                    <span class="icon">
+                                        <img
+                                            src="/img/external-link.svg"
+                                            style="filter: invert(1)"
+                                        />
+                                    </span>
+                                    <span>Minihacker on itch.io</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="section">
+            <div class="container">
+                <div class="box" style="border-radius: 15px; padding: 20px">
+                    <div class="title is-2">The newest Games</div>
+                    <div class="columns is-multiline">
+                        <a class="column is-3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img
+                                            src="/img/little-farming-game.png"
+                                            alt="Little Farming Game"
+                                        />
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">
+                                        Little-Farming-Game
+                                    </p>
+                                    <p class="subtitle is-6">Tycoon</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="column is-3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img
+                                            src="/img/easteregg-hunt.png"
+                                            alt="Easteregg Hunt"
+                                        />
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">Easteregg-Hunt</p>
+                                    <p class="subtitle is-6">Easter Game</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="column is-3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img
+                                            src="/img/troll_adventure.png"
+                                            alt="Troll Adventure"
+                                        />
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">Troll Adventure</p>
+                                    <p class="subtitle is-6">Adventure</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="column is-3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img
+                                            src="/img/destroy-simulator.png"
+                                            alt="Destroy Simulator"
+                                        />
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">Destroy-Simulator</p>
+                                    <p class="subtitle is-6">Simulation</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="column is-3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img
+                                            src="/img/escapethespike.png"
+                                            alt="Escape The Spike!"
+                                        />
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">Escape The Spike!</p>
+                                    <p class="subtitle is-6">Adventure</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="has-text-centered">
+                        <a
+                            class="button is-primary is-medium"
+                            href="browse.html"
+                            >All Games</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>Hackergames</strong> v.0.2.0-alpha. (For private use only!)
+                    All rights reserved. 
+                    Content may not be used or reproduced without explicit permission.
+                </p>
+            </div>
+        </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                // Get all "navbar-burger" elements
+                const $navbarBurgers = Array.prototype.slice.call(
+                    document.querySelectorAll(".navbar-burger"),
+                    0
+                );
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach((el) => {
+                    el.addEventListener("click", () => {
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle("is-active");
+                        $target.classList.toggle("is-active");
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
