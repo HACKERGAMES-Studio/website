@@ -1,279 +1,256 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HACKERGAMES</title>
 
-  <head>
+        <!-- Bulma Framework -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+        />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Custon CSS -->
+        <link rel="stylesheet" href="customstyle.css" />
+    </head>
+    <body>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="/img/logo-no-background.png" class="invert"/>
+                </a>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <title>Start - MiniZombay Software</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-<!--
-
-TemplateMo 579 Cyborg Gaming
-
-https://templatemo.com/tm-579-cyborg-gaming
-
--->
-  </head>
-
-<body>
-
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
-  <!-- ***** Preloader End ***** -->
-
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="">
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Search Start ***** --> <!--
-                    <div class="search-input">
-                      <form id="search" action="#">
-                        <input type="text" placeholder="Suche (macht nix :o )" id='searchText' name="searchKeyword" onkeypress="handle" />
-                        <i class="fa fa-search"></i>
-                      </form>
-                    </div> -->
-                    <!-- ***** Search End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="browse.html">Browse</a></li>
-                        <!--<li><a href="details.html">Details</a></li>
-                        <li><a href="socials.html">Socials</a></li>
-                        <li><a href="about-us.html">About Us</a></li>-->
-                    </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
+                <a
+                    role="button"
+                    class="navbar-burger"
+                    aria-label="menu"
+                    aria-expanded="false"
+                    data-target="navbarMenu"
+                >
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
             </div>
-        </div>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="page-content">
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item is-selected"> Home </a>
 
-          <!-- ***** Banner Start ***** -->
-          <div class="main-banner">
-            <div class="row">
-              <div class="col-lg-7">
-                <div class="header-text">
-                  <h4>Try the <em>new Design</em></h4>
-                  <div class="main-button">
-                    <a href="index1.html">Go check it out</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ***** Banner End ***** -->
-          
-          <!-- ***** Newest Games Start ***** -->
-          <div class="most-popular">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="heading-section">
-                  <h4><em>The newest</em> Games</h4>
-                </div>
-                <div class="row">
-                  <a class="col-lg-3 col-sm-6" href="#">
-                    <div class="item">
-                      <img src="assets/images/little-farming-game.png" alt="">
-                      <h4>Little-Farming-Game<br><span>Tycoon</span></h4>
-                      <ul>
-                        <li><i class="fa fa-upload"></i> v1.0</li>
-                        <li><i class="fa fa-download"></i> 0</li>
-                      </ul>
-                    </div>
-                  </a>
-                  <a class="col-lg-3 col-sm-6" href="#">
-                    <div class="item">
-                      <img src="assets/images/easteregg-hunt.png" alt="">
-                      <h4>Easteregg-Hunt<br><span>Eastergame</span></h4>
-                      <ul>
-                        <li><i class="fa fa-upload"></i> v1.0</li>
-                        <li><i class="fa fa-download"></i> 0</li>
-                      </ul>
-                    </div>
-                  </a>
-                  <a class="col-lg-3 col-sm-6" href="troll-adventure.html">
-                    <div class="item">
-                      <img src="assets/images/troll_adventure.png" alt="">
-                      <h4>Troll Adventure<br><span>Adventure</span></h4>
-                      <ul>
-                        <li><i class="fa fa-upload"></i> v1.0</li>
-                        <li><i class="fa fa-download"></i> 0</li>
-                      </ul>
-                    </div>
-                  </a>
-                  <a class="col-lg-3 col-sm-6" href="#">
-                    <div class="item">
-                      <img src="assets/images/destroy-simulator.png" alt="">
-                      <h4>Destroy-Simulator<br><span>Simulation</span></h4>
-                      <ul>
-                        <li><i class="fa fa-upload"></i> v0.1</li>
-                        <li><i class="fa fa-download"></i> 0</li>
-                      </ul>
-                    </div>
-                  </a>
-                  <a class="col-lg-3 col-sm-6" href="#">
-                    <div class="item">
-                      <img src="assets/images/escapethespike.png" alt="">
-                      <h4>Escape The Spike!<br><span>Adventure</span></h4>
-                      <ul>
-                        <li><i class="fa fa-upload"></i> v1.0</li>
-                        <li><i class="fa fa-download"></i> 0</li>
-                      </ul>
-                    </div>
-                  </a>
-                <!--
-                  <div class="col-lg-6">
-                    <div class="item">
-                      <div class="row">
-                        <div class="col-lg-6 col-sm-6">
-                          <div class="item inner-item">
-                            <img src="assets/images/popular-05.jpg" alt="">
-                            <h4>Mini Craft<br><span>Legendary</span></h4>
-                            <ul>
-                              <li><i class="fa fa-upload"></i> 4.8</li>
-                              <li><i class="fa fa-download"></i> 2.3M</li>
-                            </ul>
-                          </div>
+                    <a class="navbar-item"> Browse </a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link"> More </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item"> About Us </a>
+                            <a class="navbar-item"> Contact </a>
+                            <hr class="navbar-divider" />
+                            <a
+                                class="navbar-item"
+                                href="https://github.com/lutz-stu/minizombay-software/issues"
+                                target="”_blank”"
+                            >
+                                <img
+                                    src="/img/external-link.svg"
+                                    class="invert"
+                                />
+                                &nbsp;Report an issue on GitHub
+                            </a>
                         </div>
-                        <div class="col-lg-6 col-sm-6">
-                          <div class="item">
-                            <img src="assets/images/popular-06.jpg" alt="">
-                            <h4>Eagles Fly<br><span>Matrix Games</span></h4>
-                            <ul>
-                              <li><i class="fa fa-upload"></i> 4.8</li>
-                              <li><i class="fa fa-download"></i> 2.3M</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                -->  
-                  <div class="col-lg-12">
-                    <div class="main-button">
-                      <a href="browse.html">All Games</a>
-
-                    </div>
-                  </div>
                 </div>
-              </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a
+                                class="button is-link"
+                                href="https://minihacker3000.itch.io"
+                                target="”_blank”"
+                            >
+                                <span class="icon-text">
+                                    <span class="icon">
+                                        <img
+                                            src="/img/external-link.svg"
+                                            style="filter: invert(1)"
+                                        />
+                                    </span>
+                                    <span>Minihacker on itch.io</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <!-- ***** Newest Games End ***** -->
+        </nav>
 
-          <!-- ***** Gaming Library Start ***** --><!--
-          <div class="gaming-library">
-            <div class="col-lg-12">
-              <div class="heading-section">
-                <h4><em>Your Gaming</em> Library</h4>
-              </div>
-              <div class="item">
-                <ul>
-                  <li><img src="assets/images/game-01.jpg" alt="" class="templatemo-item"></li>
-                  <li><h4>Dota 2</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>24/08/2036</span></li>
-                  <li><h4>Hours Played</h4><span>634 H 22 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button border-no-active"><a href="#">Donwloaded</a></div></li>
-                </ul>
-              </div>
-              <div class="item">
-                <ul>
-                  <li><img src="assets/images/game-02.jpg" alt="" class="templatemo-item"></li>
-                  <li><h4>Fortnite</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>22/06/2036</span></li>
-                  <li><h4>Hours Played</h4><span>740 H 52 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button"><a href="#">Donwload</a></div></li>
-                </ul>
-              </div>
-              <div class="item last-item">
-                <ul>
-                  <li><img src="assets/images/game-03.jpg" alt="" class="templatemo-item"></li>
-                  <li><h4>CS-GO</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>21/04/2036</span></li>
-                  <li><h4>Hours Played</h4><span>892 H 14 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button border-no-active"><a href="#">Donwloaded</a></div></li>
-                </ul>
-              </div>
+        <section class="section">
+            <div class="container">
+                <div class="box" style="border-radius: 15px; padding: 20px">
+                    <div class="title is-2">The newest Games</div>
+                    <div class="columns is-multiline">
+                        <a class="column is-3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img
+                                            src="/img/war-of-memes.png"
+                                            alt="War Of Memes"
+                                        />
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">WarOfMemes</p>
+                                    <p class="subtitle is-6">
+                                        Local Muliplayer
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="column is-3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img
+                                            src="/img/just-click.png"
+                                            alt="Just Click"
+                                        />
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">JustClick</p>
+                                    <p class="subtitle is-6">Clicker game</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="column is-3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img
+                                            src="/img/little-farming-game.png"
+                                            alt="Little Farming Game"
+                                        />
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">
+                                        Little-Farming-Game
+                                    </p>
+                                    <p class="subtitle is-6">Tycoon</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="column is-3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img
+                                            src="/img/easteregg-hunt.png"
+                                            alt="Easteregg Hunt"
+                                        />
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">Easteregg-Hunt</p>
+                                    <p class="subtitle is-6">Easter Game</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="column is-3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img
+                                            src="/img/troll_adventure.png"
+                                            alt="Troll Adventure"
+                                        />
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">Troll Adventure</p>
+                                    <p class="subtitle is-6">Adventure</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="column is-3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img
+                                            src="/img/destroy-simulator.png"
+                                            alt="Destroy Simulator"
+                                        />
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">Destroy-Simulator</p>
+                                    <p class="subtitle is-6">Simulation</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="column is-3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img
+                                            src="/img/escapethespike.png"
+                                            alt="Escape The Spike!"
+                                        />
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">Escape The Spike!</p>
+                                    <p class="subtitle is-6">Adventure</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="has-text-centered">
+                        <a
+                            class="button is-primary is-medium"
+                            href="browse.html"
+                            >All Games</a
+                        >
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-12">
-              <div class="main-button">
-                <a href="profile.html">View Your Library</a>
-              </div>
+        </section>
+
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>Hackergames</strong> v.0.2.0-alpha. (For private use
+                    only!) All rights reserved. Content may not be used or
+                    reproduced without explicit permission.
+                </p>
             </div>
-          </div> -->
-          <!-- ***** Gaming Library End ***** -->
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>For private use only! | <a href="#">MiniZombay Software</a> v.0.1.1-alpha
-          
-          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a></p>
-        </div>
-      </div>
-    </div>
-  </footer>
+        </footer>
 
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                // Get all "navbar-burger" elements
+                const $navbarBurgers = Array.prototype.slice.call(
+                    document.querySelectorAll(".navbar-burger"),
+                    0
+                );
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+                // Add a click event on each of them
+                $navbarBurgers.forEach((el) => {
+                    el.addEventListener("click", () => {
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
 
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/tabs.js"></script>
-  <script src="assets/js/popup.js"></script>
-  <script src="assets/js/custom.js"></script>
-
-
-  </body>
-
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle("is-active");
+                        $target.classList.toggle("is-active");
+                    });
+                });
+            });
+        </script>
+    </body>
 </html>
